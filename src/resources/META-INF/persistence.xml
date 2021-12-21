@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
+    <persistence-unit name="JPA21" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>org.example.FinalProdject.Main</class>
+        <class>org.example.FinalProdject.Dao.CourseDao</class>
+        <class>org.example.FinalProdject.Dao.CourseTeacherDao</class>
+        <class>org.example.FinalProdject.Dao.EducationDao</class>
+        <class>org.example.FinalProdject.Dao.StudentDao</class>
+        <class>org.example.FinalProdject.Dao.TeacherDao</class>
+        <class>org.example.FinalProdject.Impls.CourseTeacherImpl</class>
+        <class>org.example.FinalProdject.Impls.CourseTeacherImpl</class>
+        <class>org.example.FinalProdject.Impls.EducationDaoImpl</class>
+        <class>org.example.FinalProdject.Impls.StudentDaoImpl</class>
+        <class>org.example.FinalProdject.Impls.TeacherDaoImpl</class>
+        <class>org.example.FinalProdject.Tabels.Course</class>
+        <class>org.example.FinalProdject.Tabels.CourseTeacher</class>
+        <class>org.example.FinalProdject.Tabels.Education</class>
+        <class>org.example.FinalProdject.Tabels.Student</class>
+        <class>org.example.FinalProdject.Tabels.Teacher</class>
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/finalProdject"/>
+            <property name="javax.persistence.jdbc.user" value="narvaez"/>
+            <property name="javax.persistence.jdbc.password" value="Password123"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>
