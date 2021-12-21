@@ -9,9 +9,9 @@ public class Education {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected int educationID;
     private String educationName;
-    @OneToMany(cascade = CascadeType.REFRESH)
+    @OneToMany(cascade = CascadeType.REMOVE)
     private List<Student> studentList;
-    @OneToMany(cascade = CascadeType.REFRESH)
+    @OneToMany(cascade = CascadeType.REMOVE)
     private List<Course> courseList;
 
     public Education() {
