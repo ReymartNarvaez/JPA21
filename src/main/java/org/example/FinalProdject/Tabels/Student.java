@@ -9,7 +9,7 @@ public class Student {
     private int StudentID;
     private String firstName;
     private String lastName;
-    @ManyToOne(cascade = CascadeType.REFRESH)
+    @ManyToOne(cascade = CascadeType.REMOVE)
     private Education education;
 
     public Student() {
