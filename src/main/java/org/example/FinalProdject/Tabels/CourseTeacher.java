@@ -18,7 +18,6 @@ public class CourseTeacher {
         courseTeacherID = new CourseTeacherID(courseID, teacherID);
     }
 
-
     public CourseTeacherID getCourseTeacherID() {
         return courseTeacherID;
     }
