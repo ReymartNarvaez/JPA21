@@ -76,7 +76,7 @@ public class Main {
     private void updateInformation() {
         String choice;
         do {
-            System.out.println("ENTER TABLE TO DELETE");
+            System.out.println("ENTER TABLE TO UPDATE");
             printTables();
             choice = scanner.nextLine();
         } while (selectTableToUpdate(choice));
